@@ -16,13 +16,14 @@ stages:
       - index_col
       - target_col
       - one_hot_drop
-      - auto_class_weights
+      - penalty
+      - C
     outs:
-      - models/fitted_model.pkl
+      - models/fitted_lr.pkl
   evaluate_model:
     cmd: python scripts/evaluate.py
     deps:
-      - models/fitted_model.pkl
+      - models/fitted_lr.pkl
       - scripts/evaluate.py
     params:
       - index_col

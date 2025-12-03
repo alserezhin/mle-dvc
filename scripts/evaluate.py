@@ -13,7 +13,7 @@ def evaluate_model():
     # Load data
     data = pd.read_csv('data/initial_data.csv')
     # Load model
-    with open('models/fitted_model.pkl', 'rb') as fd:
+    with open('models/fitted_lr.pkl', 'rb') as fd:
         pipeline = joblib.load(fd)
         
     # Cross validation

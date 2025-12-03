@@ -4,7 +4,3 @@
     url = s3://s3-student-mle-20251117-869a66e01f-freetrack
     endpointurl = https://storage.yandexcloud.net
     version_aware = true
-    region = ru-central1
-    sse = AES256
-    use_ssl = true
-    ssl_verify = true
